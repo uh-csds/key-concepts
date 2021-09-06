@@ -5,7 +5,7 @@ nav:
   - Social: social.md
   - Data: data.md
   - Science: science.md
-  - Programming bootcamp: bootcamp.md
+  - Tools: tools.md
 
 theme:
   name: material
