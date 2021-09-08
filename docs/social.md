@@ -34,4 +34,23 @@
 
 ## Causality and prediction
 
+
+### Essential reading
+
+* Imbens, G. W., & Rubin, D. B. (2010). Rubin causal model. In Microeconometrics (pp. 229-241). Palgrave Macmillan, London.
+* Gelman, A., & Imbens, G. (2013). Why ask why? Forward causal inference and reverse causal questions (No. w19614). National Bureau of Economic Research.
+* Bhrolcháin, M. N., & Dyson, T. (2007). On causation in demography: Issues and illustrations. Population and Development Review, 1-36.
+* Ludwig, V., & Brüderl, J. (2018). Is there a male marital wage premium? New evidence from the United States. American Sociological Review, 83(4), 744-770.
+
+### Additional reading
+
+* Mackenbach, J. P., Kulhánová, I., Menvielle, G., Bopp, M., Borrell, C., Costa, G., ... & Lundberg, O. (2015). Trends in inequalities in premature mortality: a study of 3.2 million deaths in 13 European countries. J Epidemiol Community Health, 69(3), 207-217.
+* Elo, I. T., Martikainen, P., & Myrskylä, M. (2014). Socioeconomic status across the life course and all-cause and cause-specific mortality in Finland. Social Science & Medicine, 119, 198-206.
+* Albouy, Valerie, and Laurent Lequien. "Does compulsory education lower mortality?." Journal of health economics 28.1 (2009): 155-168.
+* Myrskylä, M., & Scholz, R. (2013). Reversing East-West mortality difference among German women, and the role of smoking. International Journal of Epidemiology, 42(2), 549-558.
+* Zimmerman, D. J. (2003). Peer effects in academic outcomes: Evidence from a natural experiment. Review of Economics and statistics, 85(1), 9-23.
+* Myrskylä, M., & Margolis, R. (2014). Happiness: Before and after the kids. Demography, 51(5), 1843-1866.
+
+
+
 ## Ethics
