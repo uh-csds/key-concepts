@@ -21,7 +21,9 @@
 ## Text as data
 
 * Evans, J. A., & Aceves, P. (2016). Machine Translation: Mining Text for Social Theory. Annual Review of Sociology, 42(1), 21–50. https://doi.org/10.1146/annurev-soc-081715-074206
+* Goldberg, Y. (2017). Neural network methods in natural language processing. Morgan & Claypool. Chapter 6: Features for Textual Data.
 * Grimmer, J., & Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. Political Analysis, 21(3), 267–297. https://doi.org/10.1093/pan/mps028
+* Jurafsky, D., & Martin, J.H. (2020). Speech and Language Processing. 3rd ed. draft. Chapter 2: Regular Expressions, Text Normalization, Edit Distance. https://web.stanford.edu/~jurafsky/slp3/
 
 ## Other reviews
 
