@@ -26,18 +26,18 @@ _In case you run out of memory or have problems to install software, use followi
 
 ## Tuesday 21.9.
 
-- Practical introduction to working with R in RStudio 
+### Practical introduction to working with R in RStudio 
   - Project workflow (R projects)
   - Working directories in R
   -Object Environments
   
-- Data manipulation with R
+### Data manipulation with R
   - Changing values in objects
   - Logical subsetting
   - Missing information (NA)
 
 ## Thurday 23.9.
 
- - Introduction to [tidyverse](https://www.tidyverse.org/)
+### Introduction to [tidyverse](https://www.tidyverse.org/)
   - manipulating data with [dplyr](https://dplyr.tidyverse.org/)
   - data visualization with [ggplot2](https://ggplot2.tidyverse.org/)
