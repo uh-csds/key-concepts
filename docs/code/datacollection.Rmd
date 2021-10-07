@@ -1,0 +1,87 @@
+---
+title: "Data collection and management"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Getting ready: packages
+
+```
+install.packages( c('httr', 'jsonlite', 'rvest', "DBI", "RSQLite") )
+```
+
+```
+library(httr)
+library(jsonlite)
+library(rvest)
+library(DBI)
+library(RSQLite)
+```
+
+## Application programming interfaces (APIs)
+
+```
+url <- 'https://data.police.uk/api/crimes-street/all-crime?lat=51.5073&lng=-0.171505'
+response_from_web <- GET( url )
+response_as_text <- content( response_from_web, as="text" )
+response <- fromJSON( response_as_text )
+
+table( response$category )
+```
+
+### Tasks
+
+* Instead of Hyde Park (in the example code), identify street crimes nearby Oxford University
+* Plot the response categories between Hyde Park and Oxford University using `ggplot`
+* Are there differences between these? Test them with `chisq.test`
+
+##  Websites as data sources
+
+```
+response <- GET('https://yle.fi/uutiset/3-12132132')
+
+website_content = content( response, 'text' )
+parsed_website <- read_html( website_content )
+website_text <- html_text2( parsed_website )
+
+grepl( "Hallitus", website_text, fixed = TRUE ) ## check if the word "Hallitus" is on the website
+```
+
+### Tasks
+
+* Instead of a single newspaper article, study three articlles (you may use `for`-loop for this)
+* Choose some different words to see if they are on the website or not.
+
+## Databases
+
+```
+database_connection <- dbConnect(RSQLite::SQLite(), "example.db")
+
+dbExecute( database_connection , "CREATE TABLE posts (text TEXT);") 
+```
+
+```
+database_connection <- dbConnect(RSQLite::SQLite(), "example.db")
+
+dbExecute( database_connection , "INSERT INTO posts(text) VALUES ('This posts has no comments.');")
+## use dbExecute when results are not stored
+
+database_result <- dbSendQuery( database_connection , "SELECT * FROM posts;")
+## make a query to the database with the aim of using the results later on
+
+results <- dbFetch(database_result)
+dbClearResult(database_result) ## clean database_result for further use
+
+for( row in 1:nrow(results) ) {
+  print( results[ row, "text"] ) ## results are automatically dictionary-like
+}
+
+````
+
+### Tasks
+
+* Store the webpage content to database.
+
